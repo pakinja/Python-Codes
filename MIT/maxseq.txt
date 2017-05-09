@@ -1,0 +1,106 @@
+lenum = list(enumerate(voc))
+rge = len(voc)
+lens = len(s)
+
+print(lenum)
+
+
+for k in range(rge):
+    for i in [i for i,x in enumerate(s) if x == voc[k]]:
+        print (i,voc[k])
+
+lists = [[] for i in xrange(num_lists)]
+
+for l in range(0,len(seq)-1):
+    for k in range(0,len(seq)-1):
+        if seq[k] <= seq[k+1]:
+            print(seq[k],seq[k+1])
+            lists[l].append(seq[k])
+            lists[l].append(seq[k+1])
+            print(lists[l])            
+            seq.remove(seq[k])
+            print(seq)
+        else:
+            continue
+            print 'not ' , seq[k] , seq[k+1]
+
+for l in range(len(seq)-1):
+    for q in range(len(seq)-1):
+        print(seq)        
+        lists[l].append(seq[q])
+        print(lists[l])
+        seq.remove(seq[q])
+        print(seq)
+        if (lists[l][q]) <= (seq[q]):
+           print lists[l][q] , seq[q]
+           lists[l].append(seq[q])
+           print (lists[l])
+           
+        else:
+            seq.remove(seq[q])
+            print(seq)
+
+
+while l < range(len(seq)):
+    while r < range(len(seq)):
+        if seq[q] <= seq[r]:
+            #lists[l].append(seq[q])
+            #lists[l].append(seq[r])
+            print[lists[l]]        
+            q += 1
+            r += 1
+        else:
+            l += 1
+            seq.remove(seq[q])
+            seq.remove(seq[r])
+
+
+ if abs(n-k) == 2:
+                lists[l].remove( lists[l][-1])
+ 
+
+for r in range(len(lists)):
+    if len(lists[r]) > 3:
+        for u in range(1,len(lists[r])-1,2):  
+            lists[r].remove(lists[r][u])
+
+#s = 'xvlvoebb'
+#s = 'azcbobobegghakl'
+#s = 'aqzfbeexlwgnehjg'
+#s = 'txlpycpqiackwcwctgdxvns'
+#s = 'hentztmdciqlnmytnoa'
+#s = 'xvwospoujikc'
+#s = 'hdgyuuchpuqczjoivwuiy'
+#s = 'mvtilqqswqhzsc'
+#s = 'dvljtvaesjhnwvqqbgo'
+#s = 'abcdefghijklmnopqrstuvwxyz'
+#s = 'cktjtveahpfmemc'
+#s = 'dczckkdpffadzwcvnb'
+#s = 'kjyedhudoqbmdcbhs'
+#s = 'zyxwvutsrqponmlkjihgfedcba'
+#s = 'qvodviggvzhlaap'
+#s = 'fnaqeepvhva'
+#s = 'ydowiuaxaunvuvwrsutsck'
+#s = 'ildvlaplbkqzuxqf'
+#s = 'qfjlkcgcmiaaetuv'
+#s = 'oykcdubzapsqtsxbu'
+#s = 'txlpycpqiackwcwctgdxvns'
+#s = 'iobqzcdssrnk'
+#s = 'mtmfxnyzebhedmdjqlswiqsk'
+#s = 'wvliaelnk'
+#s = 'rjuukgwsayswjcpdskhoa'
+#s = 'wecevwnr'
+#s = 'iazgvhfncspzhaafth'
+#s = 'jjnzzrwiiuurdcyfeso'
+#s = 'uwctaapnncsebsupwjnustux'
+#s = 'abcdefghijklmnopqrstuvwxyz'
+#s = 'dlgldlxexug'
+#s = 'lmmikgkcsrtgqejqri'
+
+
+
+
+
+
+
+
